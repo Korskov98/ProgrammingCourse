@@ -1,0 +1,6 @@
+#ifndef TRANSLATION
+#define TRANSLATION
+
+
+#endif // TRANSLATION
+
