@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include"removal.h"
 
-long removal(long number){
-    long numeral, result = 0, digit = 1;
+int removal(int number){
+    int numeral, result = 0, digit = 1;
     while(number > 0){
         numeral = number % 10;
         number = number / 10;

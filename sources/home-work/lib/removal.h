@@ -4,7 +4,7 @@
 extern "C"{
 #endif
 
-long removal(long);
+int removal(int);
 
 #ifdef __cplusplus
 }

@@ -1,5 +1,3 @@
-
-/// Над этим я еще подумаю, но пока как-то сложновато выглядит
 int square(int** two_dim, int n){
     int i,j,flag,l;
     for (i = 0; i < n; i++){
