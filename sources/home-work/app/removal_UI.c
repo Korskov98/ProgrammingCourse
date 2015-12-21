@@ -3,8 +3,8 @@
 
 void removal_UI(){
     puts("Введите число.");
-    long number,result_removal;
-    scanf("%ld", &number);
+    int number,result_removal;
+    scanf("%d", &number);
     result_removal = removal(number);
-    printf("Результат: %ld \n", result_removal);
+    printf("Результат: %d \n", result_removal);
 }
