@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/// пусть лучше вернет что она собирается выводить, а не выводит
 void removing_words(char string[]){
     FILE * oFile;
     oFile = fopen("output_removing_words", "w");

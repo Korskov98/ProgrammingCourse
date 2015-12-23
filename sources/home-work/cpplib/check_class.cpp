@@ -1,5 +1,6 @@
 #include "check_class.h"
 
+ /// Везде нужны списки инициализации, везден нужны конст, дефолт вэлью
 check_class::check_class()
 {
     a = 0;
@@ -14,6 +15,7 @@ check_class::check_class(int arg_a, int arg_b, int arg_c)
     c = arg_c;
 }
 
+/// деструктора по умолчанию будет достаточно
 check_class::~check_class()
 {
 

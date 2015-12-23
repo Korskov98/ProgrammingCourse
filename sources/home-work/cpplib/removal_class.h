@@ -10,6 +10,7 @@ public:
     ~removal_class();
     void set_number(int);
     int get_number();
+    /// Можно просто один статический метод removal
     int removal();
 private:
     int number;

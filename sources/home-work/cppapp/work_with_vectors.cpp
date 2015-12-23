@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+/// слишком длинный и слишком много чем занимается
 void work_with_vectors(){
     int choice;
     cin >> choice;

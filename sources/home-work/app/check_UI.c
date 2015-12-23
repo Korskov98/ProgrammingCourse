@@ -6,6 +6,7 @@ void check_UI(){
     int a,b,c,result_check;
     scanf("%d%d%d", &a, &b, &c);
     result_check = check(a,b,c);
+/// Почему здесь не используются enum?
     switch(result_check){
         case 0:
             printf("Данные некорректны.\n");

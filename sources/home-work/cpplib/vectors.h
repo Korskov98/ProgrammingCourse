@@ -7,8 +7,10 @@ public:
     vectors();
     vectors(int, int);
     ~vectors();
+    /// Перегрузить операторы
     void addition(vectors);
     void subtraction(vectors);
+
     void copy(vectors);
     int scalar_product(vectors);
     void multiply(int);

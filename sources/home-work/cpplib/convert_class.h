@@ -1,7 +1,7 @@
 #ifndef CONVERT_CLASS_H
 #define CONVERT_CLASS_H
 
-
+/// Этот класс себя не контролирует
 class convert_class
 {
 public:

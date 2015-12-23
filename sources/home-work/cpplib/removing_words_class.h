@@ -10,6 +10,7 @@ public:
     removing_words_class();
     removing_words_class(string);
     ~removing_words_class();
+    /// уместен один статический метод
     string removing_words();
     void set_str(string);
     string get_str();
