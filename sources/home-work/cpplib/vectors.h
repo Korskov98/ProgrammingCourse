@@ -1,16 +1,16 @@
 #ifndef VECTOR
 #define VECTOR
 
-class vector
+class vectors
 {
 public:
-    vector();
-    vector(int, int);
-    ~vector();
-    void addition(vector);
-    void subtraction(vector);
-    void copy(vector);
-    int scalar_product(vector);
+    vectors();
+    vectors(int, int);
+    ~vectors();
+    void addition(vectors);
+    void subtraction(vectors);
+    void copy(vectors);
+    int scalar_product(vectors);
     void multiply(int);
     double module();
     int get_x();

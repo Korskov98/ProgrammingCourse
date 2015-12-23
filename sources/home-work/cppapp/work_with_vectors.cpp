@@ -7,7 +7,7 @@ void work_with_vectors(){
     int choice;
     cin >> choice;
     int x1,x2,y1,y2;
-    vector vec1,vec2;
+    vectors vec1,vec2;
     switch (choice){
         case 1:
             cout << "Введите координаты двух векторов." << endl;

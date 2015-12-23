@@ -11,10 +11,20 @@ TEMPLATE = lib
 CONFIG += staticlib
 
 SOURCES += \
-    vectors.cpp
+    vectors.cpp \
+    convert_class.cpp \
+    check_class.cpp \
+    removal_class.cpp \
+    removing_words_class.cpp \
+    square_class.cpp
 
 HEADERS += \
-    vectors.h
+    vectors.h \
+    convert_class.h \
+    check_class.h \
+    removal_class.h \
+    removing_words_class.h \
+    square_class.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

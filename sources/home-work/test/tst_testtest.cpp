@@ -39,11 +39,12 @@ void TestTest::test_check()
 
 void TestTest::test_convert()
 {
-    int ft = 9139,m,yd;
-    convert(&ft, &yd, &m);
-    QCOMPARE(m,1);
-    QCOMPARE(yd,1046);
-    QCOMPARE(ft,1);
+    struct measure_units arg;
+    arg.ft = 9139;
+    convert(&arg);
+    QCOMPARE(arg.m,1);
+    QCOMPARE(arg.yd,1046);
+    QCOMPARE(arg.ft,1);
 }
 
 void TestTest::test_square()
