@@ -4,10 +4,20 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    work_with_vectors.cpp
+    work_with_vectors.cpp \
+    addition.cpp \
+    subtraction.cpp \
+    module.cpp \
+    multiply.cpp \
+    scalar_product.cpp
 
 HEADERS += \
-    work_with_vectors.h
+    work_with_vectors.h \
+    addition.h \
+    subtraction.h \
+    module.h \
+    multiply.h \
+    scalar_product.h
 
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../cpplib/release/ -lcpplib

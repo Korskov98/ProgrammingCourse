@@ -3,22 +3,8 @@
 
 using namespace std;
 
-removing_words_class::removing_words_class()
-{
-    str = ' ';
-}
 
-removing_words_class::removing_words_class(string arg_str)
-{
-    str = arg_str;
-}
-
-removing_words_class::~removing_words_class()
-{
-
-}
-
-string removing_words_class::removing_words()
+string removing_words_class::removing_words(string str)
 {
     int found = 0,found_end = 0;
     string word, sub_str,result;
@@ -35,14 +21,3 @@ string removing_words_class::removing_words()
     result += sub_str;
     return result;
 }
-
-void removing_words_class::set_str(string arg_str)
-{
-    str = arg_str;
-}
-
-string removing_words_class::get_str()
-{
-    return str;
-}
-

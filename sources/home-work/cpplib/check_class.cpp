@@ -1,27 +1,6 @@
 #include "check_class.h"
 
- /// Везде нужны списки инициализации, везден нужны конст, дефолт вэлью
-check_class::check_class()
-{
-    a = 0;
-    b = 0;
-    c = 0;
-}
-
-check_class::check_class(int arg_a, int arg_b, int arg_c)
-{
-    a = arg_a;
-    b = arg_b;
-    c = arg_c;
-}
-
-/// деструктора по умолчанию будет достаточно
-check_class::~check_class()
-{
-
-}
-
-int check_class::check_triangles()
+int check_class::check_triangles() const
 {
     enum types_of_triangles {incorrectly, possible, isosceles, equilateral, impossible};
     if (a <= 0 || b <= 0 || c <= 0)
@@ -57,17 +36,17 @@ void check_class::set_c(int arg_c)
     c = arg_c;
 }
 
-int check_class::get_a()
+int check_class::get_a() const
 {
     return a;
 }
 
-int check_class::get_b()
+int check_class::get_b() const
 {
     return b;
 }
 
-int check_class::get_c()
+int check_class::get_c() const
 {
     return c;
 }

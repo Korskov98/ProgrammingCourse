@@ -4,7 +4,7 @@
 extern "C"{
 #endif
 
-void removing_words(char[]);
+void removing_words(char[], char*);
 
 #ifdef __cplusplus
 }

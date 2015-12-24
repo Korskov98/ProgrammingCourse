@@ -1,19 +1,17 @@
 #ifndef CONVERT_CLASS_H
 #define CONVERT_CLASS_H
 
-/// Этот класс себя не контролирует
 class convert_class
 {
 public:
-    convert_class();
-    convert_class(int);
-    ~convert_class();
+    convert_class() : ft(0), yd(0), m(0){}
+    convert_class(int arg_ft) : ft(arg_ft), yd(0), m(0){}
     void set_ft(int);
     void set_yd(int);
     void set_m(int);
-    int get_ft();
-    int get_yd();
-    int get_m();
+    int get_ft() const;
+    int get_yd() const;
+    int get_m() const;
     void ft_in_m();
     void yd_in_ft();
 private:

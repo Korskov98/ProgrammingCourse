@@ -4,58 +4,43 @@
 
 using namespace std;
 
-vectors::vectors()
+void my_vector::operator +=(my_vector arg_sum)
 {
-    x = 0;
-    y = 0;
+    x += arg_sum.x;
+    y += arg_sum.y;
 }
 
-vectors::vectors(int arg_x, int arg_y){
-    x = arg_x;
-    y = arg_y;
+void my_vector::operator -=(my_vector arg_sub)
+{
+    x -= arg_sub.x;
+    y -= arg_sub.y;
 }
 
-vectors::~vectors(){
-
-}
-
-void vectors::addition(vectors sum){
-    x += sum.x;
-    y += sum.y;
-}
-
-void vectors::subtraction(vectors sub){
-    x -= sub.x;
-    y -= sub.y;
-}
-
-void vectors::copy(vectors arg){
-    x = arg.x;
-    y = arg.y;
-}
-
-int vectors::scalar_product(vectors arg1){
+int my_vector::scalar_product(my_vector arg1) const{
     return arg1.x * x + arg1.y * y;
 }
 
-void vectors::multiply(int z){
+void my_vector::multiply(int z){
     x *= z;
     y *= z;
 }
 
-double vectors::module(){
+double my_vector::module() const{
     return sqrt(x * x + y * y);
 }
 
-int vectors::get_x(){
+int my_vector::get_x() const{
     return x;
 }
-int vectors::get_y(){
+int my_vector::get_y() const{
     return y;
 }
-void vectors::set_x(int xx){
+void my_vector::set_x(int xx){
     x = xx;
 }
-void vectors::set_y(int yy){
+void my_vector::set_y(int yy){
     y = yy;
+}
+void my_vector::just_exception() const{
+    throw TestException();
 }

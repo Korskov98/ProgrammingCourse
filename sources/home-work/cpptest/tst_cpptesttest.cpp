@@ -17,7 +17,6 @@ public:
 private Q_SLOTS:
     void test_vectors_addition();
     void test_vectors_subtraction();
-    void test_vectors_copy();
     void test_vectors_scalar_product();
     void test_vectors_multiply();
     void test_vectors_module();
@@ -34,31 +33,23 @@ CpptestTest::CpptestTest()
 
 void CpptestTest::test_vectors_addition()
 {
-    vectors vec1(3,4),vec2(5,6);
-    vec1.addition(vec2);
+    my_vector vec1(3,4),vec2(5,6);
+    vec1 += vec2;
     QCOMPARE(vec1.get_x(),8);
     QCOMPARE(vec1.get_y(),10);
 }
 
 void CpptestTest::test_vectors_subtraction()
 {
-    vectors vec1(5,6),vec2(3,4);
-    vec1.subtraction(vec2);
+    my_vector vec1(5,6),vec2(3,4);
+    vec1 -= vec2;
     QCOMPARE(vec1.get_x(),2);
     QCOMPARE(vec1.get_y(),2);
 }
 
-void CpptestTest::test_vectors_copy()
-{
-    vectors vec1(3,4),vec2(5,6);
-    vec1.copy(vec2);
-    QCOMPARE(vec1.get_x(),5);
-    QCOMPARE(vec1.get_y(),6);
-}
-
 void CpptestTest::test_vectors_scalar_product()
 {
-    vectors vec1(3,4),vec2(5,6);
+    my_vector vec1(3,4),vec2(5,6);
     int result;
     result = vec1.scalar_product(vec2);
     QCOMPARE(result,39);
@@ -67,7 +58,7 @@ void CpptestTest::test_vectors_scalar_product()
 void CpptestTest::test_vectors_multiply()
 {
     int number = 10;
-    vectors vec1(3,4);
+    my_vector vec1(3,4);
     vec1.multiply(number);
     QCOMPARE(vec1.get_x(),30);
     QCOMPARE(vec1.get_y(),40);
@@ -76,7 +67,7 @@ void CpptestTest::test_vectors_multiply()
 void CpptestTest::test_vectors_module()
 {
     double result;
-    vectors vec1(3,4);
+    my_vector vec1(3,4);
     result = vec1.module();
     QCOMPARE((int)result,5);
 }
@@ -98,28 +89,26 @@ void CpptestTest::test_check_class(){
 }
 
 void CpptestTest::test_removal_class(){
-    removal_class test(2793);
-    int result;
-    result = test.removal();
+    int number = 2793,result;
+    result = removal_class::removal(number);
     QCOMPARE(result,2);
 }
 
 void CpptestTest::test_removing_words_class(){
-    removing_words_class test("ui ui test test");
-    string result;
-    result = test.removing_words();
+    string str = "ui ui test test",result;
+    result = removing_words_class::removing_words(str);
     QVERIFY(result == "ui test");
 }
 
 void CpptestTest::test_square_class(){
     square_class test(2);
-    int result;
+    bool result;
     test.set_member_two_dim(0, 0, 1);
     test.set_member_two_dim(0, 1, 2);
     test.set_member_two_dim(1, 0, 2);
     test.set_member_two_dim(1, 1, 1);
     result = test.check_latin_square();
-    QCOMPARE(result, 1);
+    QCOMPARE(result,true);
 }
 
 QTEST_APPLESS_MAIN(CpptestTest)

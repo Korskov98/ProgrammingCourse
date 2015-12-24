@@ -1,36 +1,22 @@
 #include "convert_class.h"
 
-convert_class::convert_class()
-{
-    ft = 0;
-    yd = 0;
-    m = 0;
-}
-
-convert_class::convert_class(int arg_ft){
-    ft = arg_ft;
-    yd = 0;
-    m = 0;
-}
-
-convert_class::~convert_class(){
-
-}
-
-int convert_class::get_ft(){
+int convert_class::get_ft() const{
     return ft;
 }
 
-int convert_class::get_m(){
+int convert_class::get_m() const{
     return m;
 }
 
-int convert_class::get_yd(){
+int convert_class::get_yd() const{
     return yd;
 }
 
 void convert_class::set_ft(int arg_ft){
     ft = arg_ft;
+    while (ft >= 3){
+        set_yd(yd + 1);
+    }
 }
 
 void convert_class::set_m(int arg_m){
@@ -39,6 +25,9 @@ void convert_class::set_m(int arg_m){
 
 void convert_class::set_yd(int arg_yd){
     yd = arg_yd;
+    while (yd >= 2000){
+        set_m(m + 1);
+    }
 }
 
 void convert_class::ft_in_m(){

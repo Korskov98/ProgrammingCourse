@@ -1,24 +1,33 @@
 #ifndef VECTOR
 #define VECTOR
 
-class vectors
+#include <exception>
+#include <string>
+
+using namespace std;
+
+class TestException : public exception{
+public:
+    string get_error() const{
+        return "Тестовая ошибка.";
+    }
+};
+
+class my_vector
 {
 public:
-    vectors();
-    vectors(int, int);
-    ~vectors();
-    /// Перегрузить операторы
-    void addition(vectors);
-    void subtraction(vectors);
-
-    void copy(vectors);
-    int scalar_product(vectors);
+    my_vector() : x(0), y(0){}
+    my_vector(int arg_x, int arg_y) : x(arg_x), y(arg_y){}
+    void operator +=(my_vector);
+    void operator -=(my_vector);
+    int scalar_product(my_vector) const;
     void multiply(int);
-    double module();
-    int get_x();
-    int get_y();
+    double module() const;
+    int get_x() const;
+    int get_y() const;
     void set_x(int);
     void set_y(int);
+    void just_exception() const;
 private:
     int x;
     int y;

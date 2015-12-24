@@ -3,10 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/// пусть лучше вернет что она собирается выводить, а не выводит
-void removing_words(char string[]){
-    FILE * oFile;
-    oFile = fopen("output_removing_words", "w");
+void removing_words(char string[], char *result){
     int n,i = 0;
     n = strlen(string);
     char word[100];
@@ -28,9 +25,8 @@ void removing_words(char string[]){
             k++;
         }
         if (flag == 0){
-            fprintf(oFile, "%s ", word);
+            strcat(result, word);
         }
         i++;
     }
-    fclose(oFile);
 }

@@ -5,15 +5,7 @@
 class removal_class
 {
 public:
-    removal_class();
-    removal_class(int);
-    ~removal_class();
-    void set_number(int);
-    int get_number();
-    /// Можно просто один статический метод removal
-    int removal();
-private:
-    int number;
+    static int removal(int number);
 };
 
 #endif // REMOVAL_CLASS_H
