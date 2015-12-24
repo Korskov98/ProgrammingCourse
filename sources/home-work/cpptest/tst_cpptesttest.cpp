@@ -14,6 +14,7 @@ class CpptestTest : public QObject
 public:
     CpptestTest();
 
+/// Добавить тесты для исключений
 private Q_SLOTS:
     void test_vectors_addition();
     void test_vectors_subtraction();

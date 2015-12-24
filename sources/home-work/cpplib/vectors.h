@@ -23,6 +23,7 @@ public:
     void operator +=(my_vector);
     void operator -=(my_vector);
     int scalar_product(my_vector) const;
+    /// Тоже перегрузить
     void multiply(int);
     double module() const;
     int get_x() const;

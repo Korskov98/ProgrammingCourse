@@ -1,12 +1,14 @@
 #ifndef CONVERT_CLASS_H
 #define CONVERT_CLASS_H
 
+/// Переименовать
 class convert_class
 {
 public:
     convert_class(int arg_ft = 0) : ft(arg_ft), yd(0), m(0){
         ft = arg_ft;
     }
+    /// консты для параметров
     void set_ft(int);
     void set_yd(int);
     void set_m(int);
