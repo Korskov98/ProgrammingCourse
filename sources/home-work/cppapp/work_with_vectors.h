@@ -1,7 +1,17 @@
-#ifndef WORK_WITH_VECTORS
-#define WORK_WITH_VECTORS
+#ifndef WORK_WITH_VECTORS_H
+#define WORK_WITH_VECTORS_H
 
-void work_with_vectors();
 
-#endif // WORK_WITH_VECTORS
-
+class work_with_vectors
+{
+public:
+    void demonstration() const;
+private:
+    void addition() const;
+    void subtraction() const;
+    void scalar_product() const;
+    void multiply() const;
+    void module() const;
+    void just_exception() const;
+};
+#endif // WORK_WITH_VECTORS_H

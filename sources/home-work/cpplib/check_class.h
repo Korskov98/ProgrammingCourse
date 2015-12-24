@@ -5,8 +5,11 @@
 class check_class
 {
 public:
-    check_class() : a(0), b(0), c(0){}
-    check_class(int arg_a,int arg_b,int arg_c) : a(arg_a), b(arg_b), c(arg_c){}
+    check_class(int arg_a = 0,int arg_b = 0,int arg_c = 0) : a(arg_a), b(arg_b), c(arg_c){
+        a = arg_a;
+        b = arg_b;
+        c = arg_c;
+    }
     int check_triangles() const;
     void set_a(int);
     void set_b(int);

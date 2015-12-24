@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    work_with_vectors();
+    work_with_vectors check;
+    check.demonstration();
     return 0;
 }
 

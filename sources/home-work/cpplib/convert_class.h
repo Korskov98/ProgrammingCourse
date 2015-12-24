@@ -4,8 +4,9 @@
 class convert_class
 {
 public:
-    convert_class() : ft(0), yd(0), m(0){}
-    convert_class(int arg_ft) : ft(arg_ft), yd(0), m(0){}
+    convert_class(int arg_ft = 0) : ft(arg_ft), yd(0), m(0){
+        ft = arg_ft;
+    }
     void set_ft(int);
     void set_yd(int);
     void set_m(int);

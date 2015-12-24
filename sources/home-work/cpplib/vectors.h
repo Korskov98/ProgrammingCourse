@@ -16,8 +16,10 @@ public:
 class my_vector
 {
 public:
-    my_vector() : x(0), y(0){}
-    my_vector(int arg_x, int arg_y) : x(arg_x), y(arg_y){}
+    my_vector(int arg_x = 0, int arg_y = 0) : x(arg_x), y(arg_y){
+        x = arg_x;
+        y = arg_y;
+    }
     void operator +=(my_vector);
     void operator -=(my_vector);
     int scalar_product(my_vector) const;

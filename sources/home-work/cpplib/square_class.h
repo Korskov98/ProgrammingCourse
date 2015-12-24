@@ -26,7 +26,13 @@ public:
 class square_class
 {
 public:
-    square_class(int);
+    square_class(int arg_n = 0) : n(arg_n){
+        n = arg_n;
+        two_dim.resize(n);
+        for (int i = 0; i < n; ++i){
+            two_dim[i].resize(n);
+        }
+    }
     int get_n() const;
     bool check_latin_square();
     void set_member_two_dim(int, int, int);

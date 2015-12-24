@@ -3,15 +3,6 @@
 
 using namespace std;
 
-square_class::square_class(int arg_n)
-{
-    n = arg_n;
-    two_dim.resize(n);
-    for (int i = 0; i < n; ++i){
-        two_dim[i].resize(n);
-    }
-}
-
 int square_class::get_n() const
 {
     return n;
