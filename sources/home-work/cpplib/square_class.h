@@ -23,10 +23,10 @@ public:
     }
 };
 
-class square_class
+class latin_square
 {
 public:
-    square_class(int arg_n = 0) : n(arg_n){
+    latin_square(int arg_n = 0) : n(arg_n){
         n = arg_n;
         two_dim.resize(n);
         for (int i = 0; i < n; ++i){
@@ -34,8 +34,8 @@ public:
         }
     }
     int get_n() const;
-    bool check_latin_square();
-    void set_member_two_dim(int, int, int);
+    bool check_latin_square() const;
+    void set_member_two_dim(const int, const int, const int);
 private:
     int n;
     vector<vector<int> > two_dim;

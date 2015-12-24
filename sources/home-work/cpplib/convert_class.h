@@ -1,17 +1,14 @@
 #ifndef CONVERT_CLASS_H
 #define CONVERT_CLASS_H
 
-/// Переименовать
-class convert_class
+class imperial_system
 {
 public:
-    convert_class(int arg_ft = 0) : ft(arg_ft), yd(0), m(0){
-        ft = arg_ft;
+    imperial_system(int arg_ft = 0) : ft(arg_ft), yd(0), m(0){
     }
-    /// консты для параметров
-    void set_ft(int);
-    void set_yd(int);
-    void set_m(int);
+    void set_ft(const int);
+    void set_yd(const int);
+    void set_m(const int);
     int get_ft() const;
     int get_yd() const;
     int get_m() const;

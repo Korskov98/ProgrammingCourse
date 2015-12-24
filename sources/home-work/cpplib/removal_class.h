@@ -2,10 +2,10 @@
 #define REMOVAL_CLASS_H
 
 
-class removal_class
+class removal
 {
 public:
-    static int removal(int number);
+    static int removal_odd(int number);
 };
 
 #endif // REMOVAL_CLASS_H

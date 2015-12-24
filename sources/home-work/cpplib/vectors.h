@@ -17,14 +17,11 @@ class my_vector
 {
 public:
     my_vector(int arg_x = 0, int arg_y = 0) : x(arg_x), y(arg_y){
-        x = arg_x;
-        y = arg_y;
     }
-    void operator +=(my_vector);
-    void operator -=(my_vector);
-    int scalar_product(my_vector) const;
-    /// Тоже перегрузить
-    void multiply(int);
+    void operator +=(const my_vector);
+    void operator -=(const my_vector);
+    int scalar_product(const my_vector) const;
+    void operator *=(const int);
     double module() const;
     int get_x() const;
     int get_y() const;

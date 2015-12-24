@@ -1,15 +1,14 @@
 #ifndef CHECK_CLASS_H
 #define CHECK_CLASS_H
 
+enum types_of_triangles {incorrectly, possible, isosceles, equilateral, impossible};
 
-/// Пе
-class check_class
+class triangles
 {
 public:
-    check_class(int arg_a = 0,int arg_b = 0,int arg_c = 0) : a(arg_a), b(arg_b), c(arg_c){
+    triangles(int arg_a = 0,int arg_b = 0,int arg_c = 0) : a(arg_a), b(arg_b), c(arg_c){
     }
-    /// Пусть возвращает еnum
-    int check_triangles() const;
+    types_of_triangles check_triangles() const;
     int get_a() const;
     int get_b() const;
     int get_c() const;

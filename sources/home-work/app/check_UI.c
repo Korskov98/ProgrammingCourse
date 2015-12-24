@@ -6,21 +6,20 @@ void check_UI(){
     int a,b,c,result_check;
     scanf("%d%d%d", &a, &b, &c);
     result_check = check(a,b,c);
-/// Почему здесь не используются enum?
     switch(result_check){
-        case 0:
+        case incorrectly:
             printf("Данные некорректны.\n");
         break;
-        case 1:
+        case possible:
             printf("Данный треугольник возможен.\n");
         break;
-        case 2:
+        case isosceles:
             printf("Данный треугольник является равнобедренным.\n");
         break;
-        case 3:
+        case equilateral:
             printf("Данный треугольник является равносторонним.\n");
         break;
-        case 4:
+        case impossible:
             printf("Данный треугольник не возможен.\n");
     }
 }

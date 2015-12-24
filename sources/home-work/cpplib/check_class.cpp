@@ -1,8 +1,7 @@
 #include "check_class.h"
 
-int check_class::check_triangles() const
+types_of_triangles triangles::check_triangles() const
 {
-    enum types_of_triangles {incorrectly, possible, isosceles, equilateral, impossible};
     if (a <= 0 || b <= 0 || c <= 0)
         return incorrectly;
     else{
@@ -21,32 +20,17 @@ int check_class::check_triangles() const
     }
 }
 
-void check_class::set_a(int arg_a)
-{
-    a = arg_a;
-}
-
-void check_class::set_b(int arg_b)
-{
-    b = arg_b;
-}
-
-void check_class::set_c(int arg_c)
-{
-    c = arg_c;
-}
-
-int check_class::get_a() const
+int triangles::get_a() const
 {
     return a;
 }
 
-int check_class::get_b() const
+int triangles::get_b() const
 {
     return b;
 }
 
-int check_class::get_c() const
+int triangles::get_c() const
 {
     return c;
 }

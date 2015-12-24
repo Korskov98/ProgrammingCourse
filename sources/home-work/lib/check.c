@@ -2,7 +2,6 @@
 #include "check.h"
 
 int check(int a, int b, int c){
-    enum types_of_triangles {incorrectly, possible, isosceles, equilateral, impossible};
     if (a <= 0 || b <= 0 || c <= 0)
         return incorrectly;
     else{

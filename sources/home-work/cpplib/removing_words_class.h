@@ -4,10 +4,10 @@
 
 using namespace std;
 
-class removing_words_class
+class removing_words
 {
 public:
-    static string removing_words(string);
+    static string removing_repeating_words(string);
 };
 
 #endif // REMOVING_WORDS_CLASS_H

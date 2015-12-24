@@ -4,25 +4,26 @@
 
 using namespace std;
 
-void my_vector::operator +=(my_vector arg_sum)
+void my_vector::operator +=(const my_vector arg_sum)
 {
     x += arg_sum.x;
     y += arg_sum.y;
 }
 
-void my_vector::operator -=(my_vector arg_sub)
+void my_vector::operator -=(const my_vector arg_sub)
 {
     x -= arg_sub.x;
     y -= arg_sub.y;
 }
 
-int my_vector::scalar_product(my_vector arg1) const{
+int my_vector::scalar_product(const my_vector arg1) const{
     return arg1.x * x + arg1.y * y;
 }
 
-void my_vector::multiply(int z){
-    x *= z;
-    y *= z;
+void my_vector::operator *=(const int arg_z)
+{
+    x *= arg_z;
+    y *= arg_z;
 }
 
 double my_vector::module() const{

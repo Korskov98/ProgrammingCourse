@@ -3,12 +3,12 @@
 
 using namespace std;
 
-int square_class::get_n() const
+int latin_square::get_n() const
 {
     return n;
 }
 
-bool square_class::check_latin_square()
+bool latin_square::check_latin_square() const
 {
         int i,j,l;
         bool flag;
@@ -41,9 +41,9 @@ bool square_class::check_latin_square()
         return flag;
 }
 
-void square_class::set_member_two_dim(int arg_i, int arg_j, int arg)
+void latin_square::set_member_two_dim(const int arg_i, const int arg_j, const int arg)
 {
-    if (arg_i > n || arg_j > n){
+    if (arg_i > n - 1 || arg_j > n - 1){
         throw WrongAdressException(arg_i, arg_j);
     }
     two_dim[arg_i][arg_j] = arg;

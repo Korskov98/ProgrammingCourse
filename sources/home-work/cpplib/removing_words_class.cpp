@@ -4,7 +4,7 @@
 using namespace std;
 
 
-string removing_words_class::removing_words(string str)
+string removing_words::removing_repeating_words(string str)
 {
     int found = 0,found_end = 0;
     string word, sub_str,result;
