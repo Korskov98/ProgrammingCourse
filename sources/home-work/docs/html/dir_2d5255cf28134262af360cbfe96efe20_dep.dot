@@ -1,0 +1,6 @@
+digraph "/home/user/ProgrammingCourse/sources/home-work/cpptest" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_2d5255cf28134262af360cbfe96efe20 [shape=box, label="cpptest", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_2d5255cf28134262af360cbfe96efe20.html"];
+}

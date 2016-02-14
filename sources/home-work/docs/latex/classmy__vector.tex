@@ -1,0 +1,167 @@
+\hypertarget{classmy__vector}{\section{Класс my\+\_\+vector}
+\label{classmy__vector}\index{my\+\_\+vector@{my\+\_\+vector}}
+}
+
+
+Работа с векторами  
+
+
+
+
+{\ttfamily \#include $<$vectors.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmy__vector_a1d74af67c8e3d7c98633eec28a9b0753}{my\+\_\+vector} (int arg\+\_\+x=0, int arg\+\_\+y=0)
+\begin{DoxyCompactList}\small\item\em Конструктор \end{DoxyCompactList}\item 
+void \hyperlink{classmy__vector_aaa6296ddc12be933ca4ef4f3701728fb}{operator+=} (const \hyperlink{classmy__vector}{my\+\_\+vector})
+\begin{DoxyCompactList}\small\item\em Сложение \end{DoxyCompactList}\item 
+void \hyperlink{classmy__vector_a2b7adbd3e478022dd436a95bc41fe0e2}{operator-\/=} (const \hyperlink{classmy__vector}{my\+\_\+vector})
+\begin{DoxyCompactList}\small\item\em Вычетание \end{DoxyCompactList}\item 
+int \hyperlink{classmy__vector_a6d09ad6011173ddc7252d8361281a7b9}{scalar\+\_\+product} (const \hyperlink{classmy__vector}{my\+\_\+vector}) const 
+\begin{DoxyCompactList}\small\item\em Скалярное произведение \end{DoxyCompactList}\item 
+\hypertarget{classmy__vector_a16bd51f078688bd0cb18b4f449ae211f}{void \hyperlink{classmy__vector_a16bd51f078688bd0cb18b4f449ae211f}{operator$\ast$=} (const int)}\label{classmy__vector_a16bd51f078688bd0cb18b4f449ae211f}
+
+\begin{DoxyCompactList}\small\item\em Умножение \end{DoxyCompactList}\item 
+double \hyperlink{classmy__vector_ad5944ee980eb7c793a219ca97f13cc51}{module} () const 
+\begin{DoxyCompactList}\small\item\em Модуль \end{DoxyCompactList}\item 
+int \hyperlink{classmy__vector_a407ee02aaf91a4337e1d24ee61305703}{get\+\_\+x} () const 
+\begin{DoxyCompactList}\small\item\em Получить координату по оси x. \end{DoxyCompactList}\item 
+int \hyperlink{classmy__vector_abb7cd5006d520163f1b3ca9ec59c9b75}{get\+\_\+y} () const 
+\begin{DoxyCompactList}\small\item\em Получить координату по оси y. \end{DoxyCompactList}\item 
+\hypertarget{classmy__vector_a1ed099bda3e8f21bb85389137b6d3395}{void \hyperlink{classmy__vector_a1ed099bda3e8f21bb85389137b6d3395}{set\+\_\+x} (int)}\label{classmy__vector_a1ed099bda3e8f21bb85389137b6d3395}
+
+\begin{DoxyCompactList}\small\item\em Установить значение поля x, равное координате по оси x. \end{DoxyCompactList}\item 
+\hypertarget{classmy__vector_adb1aa58aec414c104fc3114403167497}{void \hyperlink{classmy__vector_adb1aa58aec414c104fc3114403167497}{set\+\_\+y} (int)}\label{classmy__vector_adb1aa58aec414c104fc3114403167497}
+
+\begin{DoxyCompactList}\small\item\em Установить значение поля y, равное координате по оси y. \end{DoxyCompactList}\item 
+\hypertarget{classmy__vector_aca2bb145ee946c3d1d5c8776385e13a6}{void {\bfseries just\+\_\+exception} () const }\label{classmy__vector_aca2bb145ee946c3d1d5c8776385e13a6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Работа с векторами 
+
+На вход программе подаётся две координаты вектора и далее с ним можно делать арифмитические действия. 
+
+\subsection{Конструктор(ы)}
+\hypertarget{classmy__vector_a1d74af67c8e3d7c98633eec28a9b0753}{\index{my\+\_\+vector@{my\+\_\+vector}!my\+\_\+vector@{my\+\_\+vector}}
+\index{my\+\_\+vector@{my\+\_\+vector}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{my\+\_\+vector}]{\setlength{\rightskip}{0pt plus 5cm}my\+\_\+vector\+::my\+\_\+vector (
+\begin{DoxyParamCaption}
+\item[{int}]{arg\+\_\+x = {\ttfamily 0}, }
+\item[{int}]{arg\+\_\+y = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmy__vector_a1d74af67c8e3d7c98633eec28a9b0753}
+
+
+Конструктор 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em arg\+\_\+x} & координата по оси x \\
+\hline
+{\em arg\+\_\+y} & координата по оси y \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Методы}
+\hypertarget{classmy__vector_a407ee02aaf91a4337e1d24ee61305703}{\index{my\+\_\+vector@{my\+\_\+vector}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{get\+\_\+x}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+vector\+::get\+\_\+x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmy__vector_a407ee02aaf91a4337e1d24ee61305703}
+
+
+Получить координату по оси x. 
+
+\begin{DoxyReturn}{Возвращает}
+координата по оси x 
+\end{DoxyReturn}
+\hypertarget{classmy__vector_abb7cd5006d520163f1b3ca9ec59c9b75}{\index{my\+\_\+vector@{my\+\_\+vector}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{get\+\_\+y}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+vector\+::get\+\_\+y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmy__vector_abb7cd5006d520163f1b3ca9ec59c9b75}
+
+
+Получить координату по оси y. 
+
+\begin{DoxyReturn}{Возвращает}
+координата по оси y 
+\end{DoxyReturn}
+\hypertarget{classmy__vector_ad5944ee980eb7c793a219ca97f13cc51}{\index{my\+\_\+vector@{my\+\_\+vector}!module@{module}}
+\index{module@{module}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{module}]{\setlength{\rightskip}{0pt plus 5cm}double my\+\_\+vector\+::module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classmy__vector_ad5944ee980eb7c793a219ca97f13cc51}
+
+
+Модуль 
+
+\begin{DoxyReturn}{Возвращает}
+модуль вектора 
+\end{DoxyReturn}
+\hypertarget{classmy__vector_aaa6296ddc12be933ca4ef4f3701728fb}{\index{my\+\_\+vector@{my\+\_\+vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}void my\+\_\+vector\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const {\bf my\+\_\+vector}}]{arg\+\_\+sum}
+\end{DoxyParamCaption}
+)}}\label{classmy__vector_aaa6296ddc12be933ca4ef4f3701728fb}
+
+
+Сложение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \hyperlink{classmy__vector}{my\+\_\+vector}} & вектор, который складывается с данным \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmy__vector_a2b7adbd3e478022dd436a95bc41fe0e2}{\index{my\+\_\+vector@{my\+\_\+vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}void my\+\_\+vector\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const {\bf my\+\_\+vector}}]{arg\+\_\+sub}
+\end{DoxyParamCaption}
+)}}\label{classmy__vector_a2b7adbd3e478022dd436a95bc41fe0e2}
+
+
+Вычетание 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \hyperlink{classmy__vector}{my\+\_\+vector}} & вектор, который вычетается из данного \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmy__vector_a6d09ad6011173ddc7252d8361281a7b9}{\index{my\+\_\+vector@{my\+\_\+vector}!scalar\+\_\+product@{scalar\+\_\+product}}
+\index{scalar\+\_\+product@{scalar\+\_\+product}!my\+\_\+vector@{my\+\_\+vector}}
+\subsubsection[{scalar\+\_\+product}]{\setlength{\rightskip}{0pt plus 5cm}int my\+\_\+vector\+::scalar\+\_\+product (
+\begin{DoxyParamCaption}
+\item[{const {\bf my\+\_\+vector}}]{arg1}
+\end{DoxyParamCaption}
+) const}}\label{classmy__vector_a6d09ad6011173ddc7252d8361281a7b9}
+
+
+Скалярное произведение 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em \hyperlink{classmy__vector}{my\+\_\+vector}} & вектор, который скалярно умножается с данным \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/user/\+Programming\+Course/sources/home-\/work/cpplib/vectors.\+h\item 
+/home/user/\+Programming\+Course/sources/home-\/work/cpplib/vectors.\+cpp\end{DoxyCompactItemize}
